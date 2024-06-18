@@ -1,7 +1,7 @@
 # Queryable-MC [ML-MobileClip fork]
 
 
-The open-source code of this for of [Queryable](https://github.com/mazzzystar/Queryable), an iOS app, leverages the Apple's [ml-mobileclip](https://github.com/apple/ml-mobileclip) model to conduct offline searches in the 'Photos' album. Unlike the category-based search model built into the iOS Photos app, Queryable allows you to use natural language statements, such as `a brown dog sitting on a bench`, to search your album. Since it's offline, your album privacy won't be compromised by any company, including Apple or Google.
+This is a fork of [Queryable](https://github.com/mazzzystar/Queryable), an iOS app, which leverages the Apple's [ml-mobileclip](https://github.com/apple/ml-mobileclip) model to conduct offline searches in the 'Photos' album. Unlike the category-based search model built into the iOS Photos app, Queryable allows you to use natural language statements, such as `a brown dog sitting on a bench`, to search your album. Since it's offline, your album privacy won't be compromised by any company, including Apple or Google.
 
 ## How does it work?
 * Encode all album photos using the ml-mobileclip Image Encoder, compute image vectors, and save them.
