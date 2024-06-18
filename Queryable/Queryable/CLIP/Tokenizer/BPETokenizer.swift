@@ -18,7 +18,7 @@ public struct BPETokenizer {
     let endToken: String = "<|endoftext|>"
 
     /// The token used for padding
-    let padToken: String = "<|endoftext|>"
+    let padToken: String = "!"
 
     /// The unknown token.
     let unknownToken: String = "<|endoftext|>"

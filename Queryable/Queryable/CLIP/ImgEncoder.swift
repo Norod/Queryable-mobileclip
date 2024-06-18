@@ -34,7 +34,7 @@ public struct ImgEncoder {
     
     private func encode(image: UIImage) async throws -> MLShapedArray<Float32> {
         do {
-            guard let resizedImage = try image.resizeImageTo(size:CGSize(width: 224, height: 224)) else {
+            guard let resizedImage = try image.resizeImageTo(size:CGSize(width: 256, height: 256)) else {
                 throw ImageEncodingError.resizeError
             }
             
