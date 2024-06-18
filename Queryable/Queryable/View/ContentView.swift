@@ -70,7 +70,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Queryable")
+            .navigationTitle("Queryable-MC")
             .accessibilityAddTraits(.isHeader)
             .navigationDestination(isPresented: $goToIndexView) {
                 BuildIndexView(photoSearcher: photoSearcher)
