@@ -21,5 +21,5 @@ MIT License
 
 Copyright (c) 2023 Ke Fang
 
-## ML-MobileClip Porte
+## ML-MobileClip Port
 By [Doron Adler](https://linktr.ee/Norod78)
