@@ -15,9 +15,11 @@ public struct ImgEncoder {
     init(resourcesAt baseURL: URL,
          configuration config: MLModelConfiguration = .init()
     ) throws {
+        config.computeUnits = .all
         let imgEncoderURL = baseURL.appending(path:"ImageEncoder_float32.mlmodelc")
         let imgEncoderModel = try MLModel(contentsOf: imgEncoderURL, configuration: config)
         self.model = imgEncoderModel
+        print("Image encoder computeUnits = \(self.model.configuration.computeUnits)")
     }
     
     public func computeImgEmbedding(img: UIImage) async throws -> MLShapedArray<Float32> {

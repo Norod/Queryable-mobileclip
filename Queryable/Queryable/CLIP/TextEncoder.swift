@@ -23,13 +23,14 @@ public struct TextEncoder {
         let textEncoderURL = baseURL.appending(path: "TextEncoder_float32.mlmodelc")
         let vocabURL = baseURL.appending(path: "vocab.json")
         let mergesURL = baseURL.appending(path: "merges.txt")
+        config.computeUnits = .all
         
-#if os(iOS)
-        // Fallback to CPU only to avoid NN compute error on iPhone < 11 and iPad < 9th gen
-        if !UIDevice.chipIsA13OrLater() {
-            config.computeUnits = .cpuOnly
-        }
-#endif
+//#if os(iOS)
+//        // Fallback to CPU only to avoid NN compute error on iPhone < 11 and iPad < 9th gen
+//        if !UIDevice.chipIsA13OrLater() {
+//            config.computeUnits = .cpuOnly
+//        }
+//#endif
 
         // Text tokenizer and encoder
         let tokenizer = try BPETokenizer(mergesAt: mergesURL, vocabularyAt: vocabURL)
@@ -37,6 +38,7 @@ public struct TextEncoder {
         
         self.tokenizer = tokenizer
         self.model = textEncoderModel
+        print("Text encoder computeUnits = \(self.model.configuration.computeUnits)")
     }
     
     public func computeTextEmbedding(prompt: String) throws -> MLShapedArray<Float32> {
