@@ -10,11 +10,16 @@ This is a fork of [Queryable](https://github.com/mazzzystar/Queryable), an iOS a
 * Rank and return the top K most similar results.
 
 ## Run on Xcode
-Download the `ImageEncoder_float32.mlmodelc` and `TextEncoder_float32.mlmodelc` from [Google Drive](https://drive.google.com/drive/folders/1b-Km1Q8Osuco_NKdC5PPyddEhilz9mpT?usp=drive_link).
-Clone this repo, put the downloaded models below `CoreMLModels/` path and run Xcode, it should work.
+You need to put the precompiled .mlpackage files (folder packages) under the folder `Queryable/Queryable/put_models_here`
+
+To get them, go to a folder where you put your projects and do
+```bash
+git clone https://huggingface.co/Norod78/CoreML-MobileCLIP-S0
+```
+Then copy ```ImageEncoder_mobileclip_s0.mlpackage``` and ```TextEncoder_mobileclip_s0.mlpackage``` from the folder CoreML-MobileCLIP-S0 to `Queryable/Queryable/put_models_here`
 
 ## Core ML Export
-> If you only want to run Queryable, you can **skip this step** and directly use the exported model from [Google Drive](https://drive.google.com/drive/folders/1b-Km1Q8Osuco_NKdC5PPyddEhilz9mpT?usp=drive_link). If you wish to implement Queryable that supports your own native language, or do some model quantization/acceleration work, here is [The notbook I've prepared for converting Apple's S0 weights to CoreML](https://github.com/Norod/Queryable-mobileclip/blob/main/PyTorch2CoreML-mobileclip.ipynb)
+If you wish to export from pytorch yourself (e.g do some model quantization/acceleration work), here is [A reference notbook I've prepared for converting Apple's S0 weights to CoreML](https://github.com/Norod/Queryable-mobileclip/blob/main/PyTorch2CoreML-mobileclip.ipynb)
 > 
 ## Original Queryable License
 MIT License

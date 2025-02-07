@@ -16,9 +16,8 @@ public struct ImgEncoder {
          configuration config: MLModelConfiguration = .init()
     ) throws {
         config.computeUnits = .all
-        let imgEncoderURL = baseURL.appending(path:"ImageEncoder_float32.mlmodelc")
-        let imgEncoderModel = try MLModel(contentsOf: imgEncoderURL, configuration: config)
-        self.model = imgEncoderModel
+        let imgEncoderModel = try ImageEncoder_mobileclip_s0(configuration: config)
+        self.model = imgEncoderModel.model
         print("Image encoder computeUnits = \(self.model.configuration.computeUnits)")
     }
     

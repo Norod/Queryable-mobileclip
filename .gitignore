@@ -2,3 +2,6 @@ Queryable/Queryable.xcodeproj/project.xcworkspace/xcuserdata
 Queryable/Queryable.xcodeproj/xcuserdata
 Queryable/Queryable/CoreMLModels/ImageEncoder_float32.mlmodelc
 Queryable/Queryable/CoreMLModels/TextEncoder_float32.mlmodelc
+Queryable/Queryable/put_models_here/ImageEncoder_mobileclip_s0.mlpackage
+Queryable/Queryable/put_models_here/TextEncoder_mobileclip_s0.mlpackage
+Queryable/Queryable.xcodeproj/xcshareddata

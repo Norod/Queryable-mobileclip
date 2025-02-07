@@ -45,6 +45,10 @@
 		94E917E02A5A47A300324937 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94E917DA2A5A47A300324937 /* Localizable.strings */; };
 		94ECA38F2A5D52060066F64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ECA38E2A5D52050066F64B /* Assets.xcassets */; };
 		DE4D625A2AECD3CF007AB439 /* FeedbackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D62592AECD3CF007AB439 /* FeedbackItemView.swift */; };
+		E88C21762D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E88C21742D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage */; };
+		E88C21782D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E88C21742D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage */; };
+		E88C21792D56895600BB4C63 /* ImageEncoder_mobileclip_s0.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E88C21732D56895600BB4C63 /* ImageEncoder_mobileclip_s0.mlpackage */; };
+		E88C217A2D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E88C21742D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +110,8 @@
 		94E917DB2A5A47A300324937 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
 		94ECA38E2A5D52050066F64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4D62592AECD3CF007AB439 /* FeedbackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackItemView.swift; sourceTree = "<group>"; };
+		E88C21732D56895600BB4C63 /* ImageEncoder_mobileclip_s0.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = ImageEncoder_mobileclip_s0.mlpackage; sourceTree = "<group>"; };
+		E88C21742D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = TextEncoder_mobileclip_s0.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		94E917492A5A45C000324937 /* Queryable */ = {
 			isa = PBXGroup;
 			children = (
+				E88C21752D56895600BB4C63 /* put_models_here */,
 				4D3B1D632A5F95300004C06F /* CoreMLModels */,
 				94E9178C2A5A475B00324937 /* CLIP */,
 				94E917922A5A475B00324937 /* Model */,
@@ -314,6 +321,15 @@
 				94E917DA2A5A47A300324937 /* Localizable.strings */,
 			);
 			path = es.lproj;
+			sourceTree = "<group>";
+		};
+		E88C21752D56895600BB4C63 /* put_models_here */ = {
+			isa = PBXGroup;
+			children = (
+				E88C21732D56895600BB4C63 /* ImageEncoder_mobileclip_s0.mlpackage */,
+				E88C21742D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage */,
+			);
+			path = put_models_here;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +495,8 @@
 				94E917C42A5A475B00324937 /* PhotoViewForMac.swift in Sources */,
 				94E917B32A5A475B00324937 /* BPETokenizer.swift in Sources */,
 				DE4D625A2AECD3CF007AB439 /* FeedbackItemView.swift in Sources */,
+				E88C21782D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage in Sources */,
+				E88C21792D56895600BB4C63 /* ImageEncoder_mobileclip_s0.mlpackage in Sources */,
 				94E917B12A5A475B00324937 /* TextEncoder.swift in Sources */,
 				94E9174B2A5A45C000324937 /* QueryableApp.swift in Sources */,
 				94E917CA2A5A475B00324937 /* EmailHelper.swift in Sources */,
@@ -493,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88C21762D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88C217A2D56895600BB4C63 /* TextEncoder_mobileclip_s0.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
